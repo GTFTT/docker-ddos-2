@@ -13,6 +13,8 @@
 .yalc
 yalc.lock
 
+attack.log
+
 # Build artifacts
 /lib/
 
