@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#Run this script in directory where it is located
+cd "$(dirname "$0")"
+
 MIN_NUM=0
 MAX_NUM=4
 
