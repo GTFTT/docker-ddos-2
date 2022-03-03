@@ -3,6 +3,10 @@
 #Run this script in directory where it is located
 cd "$(dirname "$0")"
 
+## Add path for my commands
+#PATH=$PATH:/bin:/usr/bin:docker-compose
+#export PATH
+
 MIN_NUM=0
 MAX_NUM=4
 
@@ -19,6 +23,6 @@ bash ./stopDDoSContainers.sh
 
 # Run new DDoS containers
 echo Starting new containers...
-docker-compose --file ./lists/list_$randomNumber/docker-compose.yml up -d
+/usr/local/bin/docker-compose --file ./lists/list_$randomNumber/docker-compose.yml up -d
 
 echo ------------------

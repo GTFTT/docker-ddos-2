@@ -1,3 +1,4 @@
+#!/bin/bash
 # Initialize timer to launch automatic attacks for a new targets every _n_ amount of time
 # Container name is important! Do not change it is used to remove them later (DDoS_Attacker_...)
 
