@@ -1,11 +1,17 @@
 #!/bin/bash
-#echo
-MIN_NUM=0
-MAX_NUM=10
 
-randomNumber=$(( $RANDOM % $MAX_NUM + $MIN_NUM ))
-# Launch appropriate script:
-
-echo Launching script: $randomNumber
-bash ./lists/list_$randomNumber/do_something.sh
-
+#pwd
+#input="./logs"
+input="../check-targets/attackTargets/lists/lists_count.txt"
+#if [ -d "input" ];
+#  then
+#    echo "Exists"
+#  else
+#    echo "Not Exists"
+#fi
+line=$(head -n 1 $input)
+echo $line
+#while IFS= read -r line
+#do
+#  echo "$line"
+#done < "$input"

@@ -15,6 +15,7 @@ yalc.lock
 
 attack.log
 logs
+test.sh
 
 # Build artifacts
 /lib/
